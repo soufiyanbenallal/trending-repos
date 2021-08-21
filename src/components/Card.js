@@ -2,12 +2,7 @@ import React from 'react'
 import { calcDateDiff } from "../heplers/func";
 
 function Card({item}) {
-    const getName = (val) =>{
-        if (val && val.replace(/-/g,' ')) {
-            return val.replace(/-/g,' ')
-        }
-        else return ''
-    }
+  
     return (
         <li className="flex flex-row">
             <div className="select-none cursor-pointer flex flex-1 items-center py-4">
@@ -18,7 +13,7 @@ function Card({item}) {
                 </div>
                 <div className="flex-1 pl-1">
                     <div className="font-medium ">
-                        { getName(item.name) }
+                        { item.name }
                     </div>
                     <div className="text-gray-600 text-gray-500 text-sm">
                         { item.description && item.description }
