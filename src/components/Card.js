@@ -13,7 +13,7 @@ function Card({item}) {
                 </div>
                 <div className="flex-1 pl-1">
                     <div className="font-medium">
-                        { item.name && item.name }
+                        { (item.name && item.name.replaceAll('-',' ')) && item.name.replaceAll('-',' ') } 
                     </div>
                     <div className="text-gray-600 text-gray-500 text-sm">
                         { item.description && item.description }
