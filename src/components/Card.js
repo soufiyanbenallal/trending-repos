@@ -3,8 +3,8 @@ import { calcDateDiff } from "../heplers/func";
 
 function Card({item}) {
     const getName = (val) =>{
-        if (val) {
-            return val.replaceAll('-',' ')
+        if (val && val.replace(/-/g,' ')) {
+            return val.replace(/-/g,' ')
         }
         else return ''
     }
