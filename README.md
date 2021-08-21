@@ -8,7 +8,7 @@ It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-
 
 ## Preview
 
-Preview the example live on [Vercel](https://trending-repos.vercel.app/):
+See the preview of project live on [Vercel https://trending-repos.vercel.app/](https://trending-repos.vercel.app/):
 
 ## Running locally in development mode
 
