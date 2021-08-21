@@ -23,8 +23,8 @@ export default function Home() {
       setrepos(data.items)
       setloadingRepos(false)
     }).catch(err=>{
-      console.log("err",err.message)
       setloadingRepos(false)
+      console.log("err",err.message)
     })
 
   }, [])
@@ -37,17 +37,17 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col w-full flex-1 bg-white">
-        <section className="bg-gray-200">
+        <section className="bg-gray-200 px-2">
           <article className="max-w-2xl flex flex-col mx-auto w-full justify-center py-5">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Gemography Webapp by soufiyan benallal 🖤</h2>
             <h1 className="md:text-3xl text-2xl font-medium title-font text-gray-900">Trending respos</h1>
           </article>
         </section>
-        <section className="max-w-3xl flex flex-col mx-auto w-full justify-center ">
+        <section className="max-w-3xl mx-auto w-full px-2">
           {
             loadingRepos 
             ? (
-                <ul className="flex flex-col w-full divide divide-y" >
+                <ul className="flex flex-col w-full divide divide-y overflow-hidden" >
                   {
                     [...Array(3).keys()].map((_,key)=>(<CardPlaceHolder key={'card-placeholder-'+key} />))
                   }

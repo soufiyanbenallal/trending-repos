@@ -3,7 +3,7 @@ import React from 'react'
 function CardPlaceHolder() {
     return (
         <li className="w-full flex flex-col">
-            <div className="flex bg-white p-4">
+            <div className="flex bg-white py-4">
                 <div className="flex flex-col w-14 h-14 justify-center items-center mr-4"> 
                     <div data-placeholder className="h-14 w-14 mx-auto object-cover  rounded-full overflow-hidden relative bg-gray-200"></div>
                 </div>
